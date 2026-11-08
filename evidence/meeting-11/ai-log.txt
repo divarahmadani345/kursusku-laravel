@@ -1,0 +1,23 @@
+LOG PENGGUNAAN AI - PRAKTIKUM 11 (CRUD LANJUTAN)
+Nama: [Diva rahmadani]
+NIM: [2524212]
+
+1. Tujuan: Meminta bantuan membuat Form Request.
+   Prompt: "Bagaimana cara membuat StoreCourseRequest dan UpdateCourseRequest yang benar?"
+   Saran AI: Diterima. Kode untuk memisahkan validasi dari controller.
+   Verifikasi: Menguji input form di browser, validasi berjalan.
+
+2. Tujuan: Mengatasi error "View [courses.edit] not found".
+   Prompt: "Kenapa error view edit not found saat klik tombol edit?"
+   Saran AI: Diterima. Disarankan membuat file edit.blade.php.
+   Verifikasi: File dibuat, halaman edit terbuka normal.
+
+3. Tujuan: Membuat form edit agar menampilkan data lama.
+   Prompt: "Bagaimana cara mempertahankan data di form edit?"
+   Saran AI: Diterima. Menggunakan fungsi old('field', $course->field).
+   Verifikasi: Data muncul di form, berhasil diupdate.
+
+4. Tujuan: Memperbaiki unique rule saat update.
+   Prompt: "Kenapa saat edit data tapi kode tidak diubah, muncul error duplicate?"
+   Saran AI: Diterima. Menambahkan Rule::unique('courses','code')->ignore($course).
+   Verifikasi: Edit data tanpa mengubah kode berhasil disimpan.
